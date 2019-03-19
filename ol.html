@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bibek shakya</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+
+    <style>
+        body, html{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font: 300 18px/1.5 'Roboto', sans-serif;
+            color: #333;
+            background: url("./images/bg1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center;
+
+        }
+        .container{
+            max-width: 640px;
+            margin: 50px auto;
+            padding:0 15px;
+        }
+    .holder{
+        background-color: #fff;
+        border-radius:10px 10px 0 0;
+        box-shadow: 0 5px 15px 0 rgba(0,0,0,.1);
+
+    }
+    .holder h2{
+       font-size: 26px; 
+       padding: 30px;
+       margin: 0 0 20px;
+       text-align: center;
+       background: #19b5fe;
+       color: #fff;
+       border-radius: 10px 10px 0 0;
+       position: relative;
+    }
+    .holder h2:after{
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 15px 10px 0;
+        border-color: #19b5fe transparent transparent transparent;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+    /* custom list */
+    .customList{
+        padding: 30px;
+    }
+    .customList li{
+        counter-increment:step-counter;
+        margin: 0 0 20px;
+        list-style: none;
+        padding: 0 0 20px 40px;
+        position: relative;
+        border-bottom: 1px dashed #ccc;
+    }
+    .customList li:last-child{
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .customList li::before{
+        content: counter(step-counter);
+        background: #19b5fe;
+        color: #fff;
+        font-size: 14px;
+        padding: 2px  8px;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    </style>
+</head>
+<body>
+   <div class="container">
+<div class="holder">
+    <h2>Custom Ordered List</h2>
+    <ul class="customList">
+        <li>Mackbook Pro</li>
+        <li>Amazon Firestick</li>
+        <li>Apple Watch</li>
+        <li>Google Home</li>
+        <li>IpadPro</li>
+        <li>Iphone</li>
+        <li>Samsung Tv</li>
+    </ul>
+</div>
+   </div>
+</body>
+</html>
